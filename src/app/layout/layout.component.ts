@@ -1,4 +1,3 @@
-import { RouteRoot, Style, WebComponent } from "nimblejs";
 import html from './layout.component.html';
 import scss from './layout.component.scss'
 import { AppModule } from "../app.module";
@@ -6,6 +5,7 @@ import { Component404 } from "../pages/404/404.component";
 import { HomepageComponent } from "../pages/homepage/home.component";
 import { AboutComponent } from "../pages/about/about.component";
 import { DocumentationComponent } from "../pages/documentation/docs.component";
+import { WebComponent, RouteRoot, Style } from '@christianarchuleta/nimblejs';
 
 export class LayoutComponent extends WebComponent implements RouteRoot {
 

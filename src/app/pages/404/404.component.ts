@@ -1,4 +1,4 @@
-import { Style, WebComponent } from "nimblejs";
+import { WebComponent, Style } from '@christianarchuleta/nimblejs';
 import html from './404.component.html';
 import scss from './404.component.scss';
 

@@ -1,7 +1,8 @@
-import { WebComponent } from "nimblejs";
-import Renderer from "nimblejs/interface/vendor/renderer/renderer.impl";
+
+import { WebComponent } from "@christianarchuleta/nimblejs";
 import { Subsection, SubsectionComponent } from "../subsection/subsection.component";
 import html from './menuitem.component.html';
+import Renderer from "@christianarchuleta/nimblejs/interface/vendor/renderer/renderer.impl";
 
 export type MenuItem = {
     text: string;

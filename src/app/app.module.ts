@@ -1,4 +1,4 @@
-import { Module } from 'nimblejs';
+import { Module, Nimble } from '@christianarchuleta/nimblejs';
 import { LayoutComponent } from './layout/layout.component';
 export class AppModule extends Module {
 

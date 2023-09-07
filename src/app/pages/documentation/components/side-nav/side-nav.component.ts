@@ -1,4 +1,4 @@
-import { Style, WebComponent } from "nimblejs";
+import { WebComponent, Style } from "@christianarchuleta/nimblejs";
 import { MenuItemComponent } from "./menuitem/menuitem.component";
 import html from './side-nav.component.html';
 import scss from './side-nav.component.scss';
