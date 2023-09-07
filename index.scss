@@ -1,0 +1,41 @@
+$primary: #296EB4;
+$secondary: #2F6690;
+$success: #157145;
+$info: #bde0fe;
+$warning: #FFCF56;
+$danger: #C83E4D;
+
+body {
+    font-family: Arial, sans-serif !important;
+    background-color: #f0f0f0 !important;
+}
+
+a {
+    color: #296EB4 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+
+    &.link {
+        &::before {
+            background-image: url('/src/assets/link.png');
+            background-size: 16px 16px;
+            display: inline-block;
+            width: 16px; 
+            height: 16px;
+            content:"";
+            position: relative;
+            left: -0.5rem;
+            margin-left: 1rem
+        }
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+ul.no-style {
+    list-style: none !important;
+}
+  
+
+@import "node_modules/bootstrap/scss/bootstrap";

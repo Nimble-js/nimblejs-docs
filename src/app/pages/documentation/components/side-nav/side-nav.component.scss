@@ -1,0 +1,26 @@
+
+.dropdown {
+
+    background-image: url('/src/assets/down-arrow.png');
+    display: inline-block;
+    content:"";
+    background-size: 16px 16px;
+    width: 16px; 
+    height: 16px;
+    position: relative;
+    top: 0rem;
+    margin-left: 0.5rem;
+    
+}
+.dropdown.closed {
+    background-image: url('/src/assets/right-arrow.png');
+    display: inline-block;
+    content:"";
+    background-size: 16px 16px;
+    width: 16px; 
+    height: 16px;
+    position: relative;
+    top: 0rem;
+    margin-left: 0.5rem;
+    
+}

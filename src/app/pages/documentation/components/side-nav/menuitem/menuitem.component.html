@@ -1,0 +1,16 @@
+<div class="d-flex align-items-center border w-100 text-start shadow mb-3 rounded">
+    {{*if(recursiveKeys?.length > 0)}}<button (click)="this.open = !this.open" height="16px"
+        aria-label="{{*if(open)}}Contract {{&else}} Expand {{/if}} {{input.text}}" type="button" class="btn"> <span
+            class="dropdown {{*if(!open)}} closed {{/if}}"></span> </button>{{/if}}
+    <button (click)="this.onRenderSection()" aria-label="Open {{input.text}} section" type="button"
+        class="btn w-100 text-start">{{input.text}}</button>
+</div>
+{{*if (recursiveKeys?.length > 0 && open)}}
+<ul class="no-style ps-3">
+    {{*each(recursiveKeys) => value}}
+    <li>
+        [{{value}}]
+    </li>
+    {{/each}}
+</ul>
+{{/if}}

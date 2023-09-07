@@ -1,0 +1,27 @@
+<header>
+    <nav class="navbar navbar-primary bg-primary shadow">
+        <div class="container ps-3">
+            <div class="d-flex justify-content-between w-100 fs-4 px-4">
+                <div>
+                    <a aria-label="Navigate to the homepage" class="text-white" (href)="/"> <img class="me-4"
+                            src="/src/assets/Nimble.png" alt="Nimble the cat" width="72px">
+                        Nimble.js</a>
+                </div>
+
+                <ul class="d-flex align-items-center no-style mb-0">
+
+                    <li><a class="text-white ms-5" (href)="/about">About</a></li>
+                    <li><a class="text-white ms-5" (href)="/blog">Blog</a></li>
+                    <li><a class="text-white ms-5" (href)="/contact">Contact</a></li>
+                    <li><a class="text-white ms-5" (href)="/docs">Documentation</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="card p-5 shadow rounded-top-0">
+        [{{this.currentRouteKey}}]
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{{*each(documentation.primaryMenuList) => obj}}
+    <div class="fw-bold">{{obj.header}}</div>
+    <ul class="no-style ps-2">
+        {{*each(obj.menuItems) => menuItem}}
+            <li>
+                {{*if(menuItem.type === 'menu')}}
+                    [{{new MenuItemComponent(menuItem).key}}]
+                {{/if}}
+                {{*if(menuItem.type === 'subsection')}}
+                    [{{new SubsectionComponent(menuItem).key}}]
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+{{/each}}
