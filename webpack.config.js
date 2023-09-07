@@ -42,14 +42,17 @@ module.exports = {
         modules: [path.resolve(__dirname, 'interface/*'), 'node_modules'],
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'nimbledocs.js'
+        path: path.resolve(__dirname, '/dist'),
+        filename: 'nimbledocs.js',
+        publicPath: '/nimblejs-docs/'
     },
     plugins: [new HtmlWebpackPlugin({ template: path.join(__dirname, 'index.html'), inject: true }), new CopyWebpackPlugin({
         patterns: [{ from: 'src/assets', to: 'assets' }]
     })],
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: {
+            index: '/nimblejs-docs/'
+        }
     },
 
 };

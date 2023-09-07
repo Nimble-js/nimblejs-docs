@@ -20,17 +20,13 @@ export class LayoutComponent extends WebComponent implements RouteRoot {
     docsKey = new DocumentationComponent().key;
 
     // routes
-    routes = [{ url: '/404', key: this.page404Key }, { url: '/', key: this.homepageKey }, { url: '/about', key: this.aboutKey }, { url: '/docs', key: this.docsKey }]
+    routes = [{ url: '/nimblejs-docs/404', key: this.page404Key }, { url: '/', key: this.homepageKey }, { url: '/nimblejs-docs/', key: this.homepageKey }, { url: '/nimblejs-docs/about', key: this.aboutKey }, { url: '/nimblejs-docs/docs', key: this.docsKey }]
     currentRouteKey = this.getCurrentRouteKey();
 
     initialize() {
         if (!this.routes.map((o: any) => o.url).includes(window.location.pathname)) {
-            if (window.location.pathname.includes('nimblejs-docs')) {
-                this.navigate('/')
-            } else {
-                console.error('Page not found, routing to 404...');
-                this.navigate('/404')
-            }
+            console.error('Page not found, routing to 404...');
+            this.navigate('/nimblejs-docs/404')
         }
     }
 
@@ -42,7 +38,7 @@ export class LayoutComponent extends WebComponent implements RouteRoot {
         this.currentRouteKey = this.getCurrentRouteKey();
         if (!this.routes.map((o: any) => o.url).includes(window.location.pathname)) {
             console.error('Page not found, routing to 404...');
-            this.navigate('/404')
+            this.navigate('/nimblejs-docs/404')
         }
     }
 
