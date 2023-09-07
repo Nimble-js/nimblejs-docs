@@ -25,8 +25,12 @@ export class LayoutComponent extends WebComponent implements RouteRoot {
 
     initialize() {
         if (!this.routes.map((o: any) => o.url).includes(window.location.pathname)) {
-            console.error('Page not found, routing to 404...');
-            this.navigate('/404')
+            if (window.location.pathname.includes('nimblejs-docs')) {
+                this.navigate('/')
+            } else {
+                console.error('Page not found, routing to 404...');
+                this.navigate('/404')
+            }
         }
     }
 

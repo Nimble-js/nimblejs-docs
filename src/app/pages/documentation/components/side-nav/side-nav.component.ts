@@ -13,63 +13,6 @@ export class SideNavComponent extends WebComponent {
     MenuItemComponent = MenuItemComponent;
     SubsectionComponent = SubsectionComponent;
 
-    // exampleData: SideNavType = {
-    //     primaryMenuList: [
-    //         {
-    //             header: "Menu 1",
-    //             menuItems: [
-    //                 {
-    //                     text: "Item 1.1",
-    //                     items: [],
-    //                     html: "<p>E Pluribus Unum</p>",
-    //                     type: "menu"
-    //                 },
-    //                 {
-    //                     text: "Item 1.2",
-    //                     items: [],
-    //                     html: "<p>E Pluribus Unum</p>",
-    //                     type: "menu"
-    //                 },
-    //                 {
-    //                     text: "Subitem 1.2.1",
-    //                     items: [],
-    //                     html: "<p>E Pluribus Unum</p>",
-    //                     type: 'subsection'
-    //                 },
-    //             ],
-    //         },
-    //         {
-    //             header: "Menu 2",
-    //             menuItems: [
-    //                 {
-    //                     text: "Item 2.1",
-    //                     items: [],
-    //                     html: "<p>E Pluribus Unum</p>",
-    //                     type: "menu"
-    //                 },
-    //                 {
-    //                     text: "Item 2.2",
-    //                     items: [
-    //                         {
-    //                             text: "Subitem 2.2.1",
-    //                             items: [],
-    //                             html: "<p>E Pluribus Unum</p>",
-    //                             type: 'subsection'
-    //                         },
-    //                         {
-    //                             text: "Subitem 2.2.2",
-    //                             items: [],
-    //                             html: "<p>E Pluribus Unum</p>",
-    //                             type: 'subsection'
-    //                         },
-    //                     ],
-    //                     html: "<p>E Pluribus Unum</p>",
-    //                     type: "menu"
-    //                 },
-    //             ],
-    //         },
-    //     ]
-    // };
     documentation: SideNavType = {
         primaryMenuList: [
             {
