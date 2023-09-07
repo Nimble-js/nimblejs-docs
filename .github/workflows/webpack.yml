@@ -12,7 +12,14 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - uses: actions/checkout@v3
@@ -26,3 +33,11 @@ jobs:
       run: |
         npm install
         npx webpack
+    - name: Upload GitHub Pages artifact
+      uses: actions/upload-pages-artifact@v2.0.0
+      with: 
+        path: 'dist/'
+    - name: Deploy GitHub Pages site
+      uses: actions/deploy-pages@v1.2.9
+            
+            
