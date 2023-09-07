@@ -42,7 +42,7 @@ module.exports = {
         modules: [path.resolve(__dirname, 'interface/*'), 'node_modules'],
     },
     output: {
-        path: path.resolve(__dirname, '/dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'nimbledocs.js',
         publicPath: '/nimblejs-docs/'
     },
